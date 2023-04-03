@@ -194,6 +194,7 @@ Directive | Meaning | Example
 %p | Meridian indicator. (AM or PM.) | AM, PM
 %M | Minute as a zero-padded decimal number. | 00, 01, ..., 59
 %S | Second as a zero-padded decimal number. | 00, 01, ..., 59
+%s | Millisecond as a zero-padded decimal number. | 000, 001, ..., 999
 %f | Microsecond as a decimal number, zero-padded on the left. | 000000, 000001, ..., 999999
 %z | UTC offset in the form +HHMM or -HHMM | +0000
 %Z | Time zone name | UTC

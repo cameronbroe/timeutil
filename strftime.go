@@ -2,8 +2,8 @@ package timeutil
 
 import (
 	"fmt"
-	"time"
 	"strings"
+	"time"
 )
 
 var longDayNames = []string{
@@ -125,6 +125,8 @@ func Strftime(t *time.Time, f string) string {
 					add(fmt.Sprintf("%02d", t.Minute()))
 				case 'S':
 					add(fmt.Sprintf("%02d", t.Second()))
+				case 's':
+					add(fmt.Sprintf("%03d", t.Nanosecond()/(1000*1000)))
 				case 'f':
 					add(fmt.Sprintf("%06d", t.Nanosecond()/1000))
 				case 'z':
